@@ -1,4 +1,4 @@
-use client';
+'use client';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -25,27 +25,21 @@ export default function Navigation() {
 
           <Link
             href="/"
-            className={`${styles.navLink} ${
-              pathname === '/' ? styles.active : ''
-            }`}
+            className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}
           >
             Home
           </Link>
 
           <Link
             href="/teen"
-            className={`${styles.navLink} ${
-              pathname === '/teen' ? styles.active : ''
-            }`}
+            className={`${styles.navLink} ${pathname === '/teen' ? styles.active : ''}`}
           >
             Teen
           </Link>
 
           <Link
             href="/company"
-            className={`${styles.navLink} ${
-              pathname === '/company' ? styles.active : ''
-            }`}
+            className={`${styles.navLink} ${pathname === '/company' ? styles.active : ''}`}
           >
             Company
           </Link>
@@ -54,4 +48,3 @@ export default function Navigation() {
     </nav>
   );
 }
-
