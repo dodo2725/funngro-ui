@@ -1,0 +1,782 @@
+.main {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section - White Background */
+.hero {
+  padding: 4rem 0 6rem;
+  background-color: #fff;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #4ade80;
+  font-weight: 500;
+  margin: 0;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  color: #000;
+}
+
+.subheadline {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttonTeen {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonTeen:hover {
+  background-color: #333;
+}
+
+.buttonCompany {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonCompany:hover {
+  background-color: #f5f5f5;
+}
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoGraphic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paperPlane {
+  position: absolute;
+  font-size: 4rem;
+  color: #4ade80;
+  z-index: 3;
+  transform: rotate(-45deg);
+}
+
+.barChart {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.bar {
+  width: 20px;
+  background-color: #4ade80;
+  border-radius: 4px;
+}
+
+.bar:nth-child(1) {
+  height: 30px;
+}
+
+.bar:nth-child(2) {
+  height: 50px;
+}
+
+.bar:nth-child(3) {
+  height: 70px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -20px;
+  font-size: 3rem;
+  color: #4ade80;
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.brandName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-top: 1rem;
+}
+
+/* Video Section - White Background */
+.videoSection {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.videoOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem;
+  text-align: center;
+}
+
+.videoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Skills Section - Dark Background */
+.features {
+  padding: 6rem 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.skillCard {
+  background-color: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  border-color: #4ade80;
+  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.2);
+}
+
+.skillIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.skillCard h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Download App Section - Dark Background */
+.downloadApp {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.downloadTitle {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.appButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.appButton {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.appButton:hover {
+  border-color: #4ade80;
+  background-color: #2a2a2a;
+}
+
+.appStoreIcon {
+  font-size: 2.5rem;
+}
+
+.appButton div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appLabel {
+  font-size: 0.75rem;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.appName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* About Funngro Section - Dark Background */
+.about {
+  padding: 6rem 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.phonesContainer {
+  display: flex;
+  justify-content: center;
+  gap: -20px;
+  margin-bottom: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.phoneMockup {
+  width: 160px;
+  height: 320px;
+  background: linear-gradient(135deg, #d4a574, #c89b6c);
+  border-radius: 25px;
+  padding: 0.5rem;
+  border: 2px solid #b88a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: 0 -10px;
+  position: relative;
+}
+
+.phoneMockup:nth-child(1),
+.phoneMockup:nth-child(3) {
+  z-index: 1;
+  transform: rotate(-5deg);
+}
+
+.phoneMockup:nth-child(2) {
+  z-index: 3;
+  transform: scale(1.15);
+}
+
+.phoneMockup:nth-child(4),
+.phoneMockup:nth-child(5) {
+  z-index: 1;
+  transform: rotate(5deg);
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-color: #333;
+}
+
+.phoneScreen {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.appScreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.appScreenGreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4ade80 0%, #22c55e 50%, #fff 50%);
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.appScreenDark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a1a1a 0%, #000 50%, #fff 50%);
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.appCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3b82f6;
+}
+
+.appIcon {
+  font-size: 2rem;
+}
+
+.appHeader {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.appText {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: left;
+}
+
+.appDate {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.appNextButton {
+  background-color: #4ade80;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.sharkTankText {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin: 0.5rem 0;
+}
+
+.sharkTankTextGold {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fbbf24;
+  margin: 0.5rem 0;
+}
+
+.sharkTankSubtext {
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 1rem 0 0 0;
+}
+
+.aboutContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.whySection,
+.visionSection,
+.joinSection {
+  margin-top: 3rem;
+}
+
+.subsectionTitle {
+  font-size: 1.8rem;
+  color: #4ade80;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.beliefsList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.beliefsList li {
+  padding: 0.75rem 0;
+  color: #ccc;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.beliefsList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.visionContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.visionIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+/* Partners Section */
+.partners {
+  margin-top: 6rem;
+  padding: 4rem 0;
+  border-top: 1px solid #333;
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.partnerCategory {
+  background: linear-gradient(135deg, #1F242C 0%, #1F242C 60%, #4A4D52 60%, #4A4D52 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.partnerCategoryTitle {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.partnerLogos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.partnerLogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.partnerLogo:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.logoIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.logoName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.logoTagline {
+  font-size: 0.85rem;
+  color: #ccc;
+  font-weight: 400;
+}
+
+.logoSubtagline {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 300;
+  margin-top: 0.25rem;
+}
+
+/* Footer - White Background */
+.footer {
+  background-color: #fff;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footerLogoIcon {
+  font-size: 1.5rem;
+  color: #4ade80;
+}
+
+.footerLogoText {
+  color: #000;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerLink {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #4ade80;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcon {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #4ade80;
+}
+
+.disclaimer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #ef4444;
+}
+
+.warningIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.disclaimer p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .heroRight {
+    order: -1;
+  }
+  
+  .headline {
+    font-size: 2.5rem;
+  }
+  
+  .phonesContainer {
+    flex-direction: column;
+  }
+  
+  .phoneMockup:nth-child(2) {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2rem;
+  }
+  
+  .subheadline {
+    font-size: 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .appButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerTop {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footerLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .partnersGrid {
+    grid-template-columns: 1fr;
+  }
+}
