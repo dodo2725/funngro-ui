@@ -17,10 +17,16 @@ export default function Home() {
               <p className={styles.subheadline}>
                 As seen on Shark Tank India — a trusted platform for 50+ lakh youth to LEARN, EARN, and GROW.
               </p>
-              <div className={styles.ctaButtons}>
-                <button className={styles.buttonTeen}>Teen</button>
-                <button className={styles.buttonCompany}>Company</button>
-              </div>
+              
+             import Link from "next/link";
+                <div className={styles.ctaButtons}>
+                  <Link href="/teen" className={styles.teenBtn}>
+                  Teen
+                 </Link>
+                  <Link href="/company" className={styles.companyBtn}>
+                  Company 
+                 </Link>
+             </div>
             </div>
             <div className={styles.heroRight}>
               <div className={styles.logoContainer}>
